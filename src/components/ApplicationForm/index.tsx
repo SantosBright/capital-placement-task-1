@@ -1,14 +1,17 @@
+import { useState } from "react";
 import UploadImage from "./UploadImage";
 import PersonalInfo from "./PersonalInfo";
 import Profile from "./Profile";
 import AdditionalQuestions from "./AdditionalQuestions";
-import { useState } from "react";
 import SaveButton from "./buttons/SaveButton";
+import { axiosInstance } from "../../services/axios";
+import doneIcon from "../../images/icons/done.svg";
 
 type Props = {};
 
 const Form = (props: Props) => {
   const [image, setImage] = useState<any>({});
+  const [isSubmitted, setSubmitted] = useState(false);
   const [imageURL, setImageURL] = useState("");
 
   const [values, setValues] = useState<any>({
@@ -126,7 +129,6 @@ const Form = (props: Props) => {
     }));
 
   const handleImageChange = (e: any) => {
-    console.log("e____", e.target.files[0]);
     const file = e.target.files[0];
 
     setImage(file);
@@ -138,16 +140,33 @@ const Form = (props: Props) => {
     setImageURL("");
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     const formData = new FormData();
     formData.append("coverImage", image);
     formData.append("attributes", values);
 
     console.log("______", formData);
+    try {
+      const req = await axiosInstance.put(
+        "/1233/programs/programs-name/application-form",
+        formData
+      );
+      setSubmitted(true);
+
+      console.log(req);
+    } catch (error) {
+      setSubmitted(true);
+    }
   };
 
   return (
     <div>
+      {isSubmitted && (
+        <div className="success-modal">
+          <h4>Good Job!</h4>
+          <img src={doneIcon} alt="done" />
+        </div>
+      )}
       <UploadImage
         imageURL={imageURL}
         handleRemoveImage={handleRemoveImage}
