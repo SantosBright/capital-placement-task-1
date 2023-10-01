@@ -1,0 +1,20 @@
+.text-input {
+  flex: 1;
+}
+.text-input input {
+  width: 100%;
+  display: block;
+  color: #979797;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 1.44rem 1.62rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #000;
+  outline: none;
+  margin-top: 0.5rem;
+}
+.text-input label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: block;
+}

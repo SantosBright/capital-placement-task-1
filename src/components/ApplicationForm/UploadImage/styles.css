@@ -1,0 +1,58 @@
+.upload-image-card.card .content {
+  padding: 0;
+}
+.upload-image-card .preview-image {
+  padding: 0 1.87rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.upload-image-card .preview-image > div {
+  position: relative;
+}
+.upload-image-card .preview-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.32rem;
+}
+.upload-image-card .preview-image .delete-image {
+  position: absolute;
+  right: 0;
+  background: white;
+  top: 0;
+  margin-top: 0.62rem;
+  margin-right: 0.62rem;
+}
+.upload-image-card input {
+  visibility: hidden;
+}
+.upload-image-card .label-container {
+  padding: 0 2.5rem;
+  padding-top: 3.97rem;
+  padding-bottom: 3.56rem;
+}
+.upload-image-card label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.3125rem;
+  border: 1px dashed #000;
+  box-shadow: 3px 3px 9px 0px rgba(190, 190, 190, 0.13);
+  padding-top: 3.5rem;
+  padding-bottom: 3.9rem;
+  cursor: pointer;
+}
+.upload-image-card label h6 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+.upload-image-card label p {
+  color: #979797;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 500;
+}

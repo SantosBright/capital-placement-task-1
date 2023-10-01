@@ -1,0 +1,42 @@
+.question {
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 1.56rem;
+}
+.question .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div .question:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.question .options {
+  display: flex;
+  justify-content: space-between;
+}
+.question .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.question .title .caption {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.question .question-type {
+  color: #979797;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.56rem;
+  text-transform: capitalize;
+}
+.question .edit-icon {
+  margin-left: 3.25rem;
+}
+.question .options .switch-cont {
+  margin-left: 2rem;
+}
+.question .options .switch-cont span {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,86 @@
+.add-question-form {
+  padding-top: 1.87rem;
+}
+.add-question-form.edit-form {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.add-question-form .label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.add-question-form .question-title {
+  margin-top: 1.8rem;
+}
+
+.add-question-form .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.3rem;
+}
+.add-question-form.edit-form .actions {
+  margin-top: 4rem;
+}
+
+/* choices */
+.choices-form {
+  margin-top: 1.87rem;
+}
+.choices-form .choices-container {
+  padding: 0 0.31rem;
+  padding-right: 1.94rem;
+}
+.choices-form h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-left: 2.25rem;
+  margin-bottom: 0.44rem;
+}
+.choices-form input {
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: 1px solid #a0a0a0;
+  color: #979797;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: 0.44rem;
+  padding: 1.44rem 1.13rem;
+  outline: none;
+}
+.choices-form .single-choice {
+  display: flex;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+.choices-form .single-choice:nth-of-type(1) {
+  margin-top: 0;
+}
+.choices-form .add-button {
+  margin-left: 1rem;
+}
+.add-question-form .check-option {
+  margin-top: 1.5rem;
+}
+.add-question-form .check-option label {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: -0.00563rem;
+}
+.choices-form .max-choices-allowed {
+  margin-top: 3.13rem;
+}
+.choices-form .max-choices-allowed input {
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: 1px solid #a0a0a0;
+  color: #979797;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: 0.44rem;
+  padding: 1.44rem 1.13rem;
+  outline: none;
+}

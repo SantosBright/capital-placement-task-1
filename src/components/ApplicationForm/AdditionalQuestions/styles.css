@@ -1,0 +1,31 @@
+.add-question-form .video-options {
+  margin-top: 2rem;
+}
+.video-options textarea {
+  width: 100%;
+  display: block;
+  border-radius: 0.3125rem;
+  border: 1px solid #000;
+  height: 9rem;
+  margin-top: 1.8rem;
+  padding: 1.44rem 1.3rem;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+}
+.video-options .duration-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1.81rem;
+}
+.video-options .duration-container input {
+  border-radius: 0.3125rem;
+  border: 1px solid #000;
+  height: 100%;
+  padding: 1.44rem 1.62rem;
+  flex: 1;
+}
+.video-options .ant-select.ant-select-single {
+  flex-basis: 11.625rem;
+  margin-left: 0.8rem;
+}

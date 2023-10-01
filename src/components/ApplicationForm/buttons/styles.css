@@ -1,0 +1,33 @@
+.delete-button {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+.delete-button span {
+  margin-right: 0.7rem;
+  color: #a80000;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.00563rem;
+}
+
+.save-btn {
+  border-radius: 0.3125rem;
+  background: #087b2f;
+  padding: 0.44rem 0.69rem;
+  color: #f4fbf7;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.add-question-btn {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.00563rem;
+  display: flex;
+  align-items: center;
+  margin-top: 3.25rem;
+}
+.add-question-btn span {
+  margin-left: 1.26rem;
+}
