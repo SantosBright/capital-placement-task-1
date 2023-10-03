@@ -129,7 +129,10 @@ const Form = (props: Props) => {
     }));
 
   const handleImageChange = (e: any) => {
+    console.log('change', '')
     const file = e.target.files[0];
+
+    console.log('file___', file)
 
     setImage(file);
     setImageURL(URL.createObjectURL(file));

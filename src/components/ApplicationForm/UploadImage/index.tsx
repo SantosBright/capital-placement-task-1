@@ -21,24 +21,21 @@ const UploadImage = ({
       headerTitle="Upload cover image"
     >
       <input type="file" name="" id="image" onChange={handleImageChange} />
-      {!imageURL ? (
-        <div className="label-container">
-          <label htmlFor="image">
-            <img src={uploadIcon} alt="" />
-            <h6>Upload cover image</h6>
-            <p>16:9 ratio is recommended. Max image size 1mb</p>
-          </label>
+      <div className={`label-container ${imageURL && "hide"}`}>
+        <label htmlFor="image">
+          <img src={uploadIcon} alt="" />
+          <h6>Upload cover image</h6>
+          <p>16:9 ratio is recommended. Max image size 1mb</p>
+        </label>
+      </div>
+      <div className={`preview-image ${!imageURL && "hide"}`}>
+        <div>
+          <img src={imageURL} alt="" />
+          <button onClick={handleRemoveImage} className="delete-image">
+            <ThrashIcon />
+          </button>
         </div>
-      ) : (
-        <div className="preview-image">
-          <div>
-            <img src={imageURL} alt="" />
-            <button onClick={handleRemoveImage} className="delete-image">
-              <ThrashIcon />
-            </button>
-          </div>
-        </div>
-      )}
+      </div>
     </Card>
   );
 };

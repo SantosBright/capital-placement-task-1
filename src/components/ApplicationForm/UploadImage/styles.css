@@ -31,6 +31,9 @@
   padding-top: 3.97rem;
   padding-bottom: 3.56rem;
 }
+.upload-image-card .hide {
+  display: none;
+}
 .upload-image-card label {
   display: flex;
   flex-direction: column;
